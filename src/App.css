@@ -51,6 +51,7 @@
 }
 .list_menu_item .item_image{
   width: 4rem;
+  height: 4rem;
   margin-right: 2rem;
 }
 .list_menu_item p{

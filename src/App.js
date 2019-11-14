@@ -151,7 +151,7 @@ class App extends React.Component {
             selected={selected_2}
             onSelect={this.onSelect}
           />
-          <div style={{ margin: '2rem 0' }}>
+          <div style={{ margin: '2rem 0', marginBottom: '5rem' }}>
             <h4>{'You will receive'}</h4>
             <ul className="list_menu">
               <li style={{ margin: '1rem 0' }}>

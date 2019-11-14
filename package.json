@@ -2,7 +2,7 @@
   "name": "media-play",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://yangdi0027.github.io/mobile-landing-app",
+  "homepage": "https://yangdi0027.github.io/mobile-landing-app/",
   "dependencies": {
     "bootstrap": "^4.3.1",
     "gh-pages": "^2.1.1",
