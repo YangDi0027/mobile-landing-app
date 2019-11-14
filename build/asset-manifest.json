@@ -1,0 +1,35 @@
+{
+  "files": {
+    "main.css": "/mobile-landing-app/static/css/main.2312f766.chunk.css",
+    "main.js": "/mobile-landing-app/static/js/main.2b347035.chunk.js",
+    "main.js.map": "/mobile-landing-app/static/js/main.2b347035.chunk.js.map",
+    "runtime-main.js": "/mobile-landing-app/static/js/runtime-main.2b4c73e5.js",
+    "runtime-main.js.map": "/mobile-landing-app/static/js/runtime-main.2b4c73e5.js.map",
+    "static/css/2.b0bb7f2c.chunk.css": "/mobile-landing-app/static/css/2.b0bb7f2c.chunk.css",
+    "static/js/2.54225aef.chunk.js": "/mobile-landing-app/static/js/2.54225aef.chunk.js",
+    "static/js/2.54225aef.chunk.js.map": "/mobile-landing-app/static/js/2.54225aef.chunk.js.map",
+    "index.html": "/mobile-landing-app/index.html",
+    "precache-manifest.9e9c1b75dde71774479ca2bd94a0118c.js": "/mobile-landing-app/precache-manifest.9e9c1b75dde71774479ca2bd94a0118c.js",
+    "service-worker.js": "/mobile-landing-app/service-worker.js",
+    "static/css/2.b0bb7f2c.chunk.css.map": "/mobile-landing-app/static/css/2.b0bb7f2c.chunk.css.map",
+    "static/css/main.2312f766.chunk.css.map": "/mobile-landing-app/static/css/main.2312f766.chunk.css.map",
+    "static/media/ACS.png": "/mobile-landing-app/static/media/ACS.deca5a51.png",
+    "static/media/Royal_s.png": "/mobile-landing-app/static/media/Royal_s.1ba63fab.png",
+    "static/media/burn_en_us_set_photo_original.png": "/mobile-landing-app/static/media/burn_en_us_set_photo_original.971a80bf.png",
+    "static/media/colors_v_2_en_us_set_photo_original.png": "/mobile-landing-app/static/media/colors_v_2_en_us_set_photo_original.3c03f83b.png",
+    "static/media/contents_image_bto_3_lj.png": "/mobile-landing-app/static/media/contents_image_bto_3_lj.9ed940d0.png",
+    "static/media/contents_image_neqlof.png": "/mobile-landing-app/static/media/contents_image_neqlof.c7094547.png",
+    "static/media/contents_image_xuhh_1_l.png": "/mobile-landing-app/static/media/contents_image_xuhh_1_l.7a644376.png",
+    "static/media/free_vr.png": "/mobile-landing-app/static/media/free_vr.5d43e672.png",
+    "static/media/garther.png": "/mobile-landing-app/static/media/garther.2e029a82.png",
+    "static/media/live_science.png": "/mobile-landing-app/static/media/live_science.cf6dfe89.png",
+    "static/media/together.png": "/mobile-landing-app/static/media/together.8714015a.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.2b4c73e5.js",
+    "static/css/2.b0bb7f2c.chunk.css",
+    "static/js/2.54225aef.chunk.js",
+    "static/css/main.2312f766.chunk.css",
+    "static/js/main.2b347035.chunk.js"
+  ]
+}
