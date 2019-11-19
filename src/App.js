@@ -1,9 +1,7 @@
 import React from 'react';
-import ScrollMenu from 'react-horizontal-scrolling-menu';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 import ListMenuItem from './component/ListMenuItem';
-// import SampleVideo from './asset/Retail_assistant_video.mp4';
 
 import first_pack from './asset/Icon/first_pack.png';
 import free_vr from './asset/Icon/free_vr.png';
@@ -51,7 +49,7 @@ const MenuItem = ({ text, imgUrl, selected }) => {
 };
 
 const MenuItem1 = ({ text, imgUrl, selected }) => {
-  return <div className={`menu-item ${selected ? 'active' : ''}`} style={{ whiteSpace: 'pre-wrap', width: '35rem' }}>
+  return <div className={`menu-item ${selected ? 'active' : ''}`} style={{ whiteSpace: 'pre-wrap', width: '20rem' }}>
     <div className="item-image">
       <img className="img-fluid" src={imgUrl} alt={'logo'} width={'100px'} />
     </div>
@@ -62,20 +60,6 @@ const MenuItem1 = ({ text, imgUrl, selected }) => {
   </div>;
 };
 
-export const Menu = (list, selected) =>
-  list.map(el => {
-    const { name, imgUrl } = el;
-    return <MenuItem text={name} key={name} selected={selected} imgUrl={imgUrl} />;
-  });
-
-export const Menu1 = (list, selected) =>
-  list.map(el => {
-    const { name, imgUrl } = el;
-    return <MenuItem1 text={name} key={name} selected={selected} imgUrl={imgUrl} />;
-  });
-
-const selected_1 = 'item1';
-const selected_2 = 'item2';
 
 class App extends React.Component {
   constructor() {
@@ -84,8 +68,6 @@ class App extends React.Component {
       selected_1: true,
       selected_2: true
     }
-    this.menuItems = Menu(list, selected_1);
-    this.menuItems1 = Menu1(list1, selected_2);
   }
   componentDidMount() {
     const video = document.querySelector(`#video`)
@@ -99,11 +81,13 @@ class App extends React.Component {
     this.setState({ selected_1: key });
   }
 
+  responsive = {
+    0: { items: 1 },
+    1024: { items: 3 },
+  }
+
+
   render() {
-    const { selected_1, selected_2 } = this.state;
-    // Create menu from items
-    const menu = this.menuItems;
-    const menu1 = this.menuItems1;
     return (
       <div className="App">
         <div className="container">
@@ -137,21 +121,27 @@ class App extends React.Component {
             <h5>What's inside</h5>
             <p>{'Everthing you need! Our kits contain all the neccessary chemicals, equiment, and instructions to successfully complete the experiments.'}</p>
           </div>
-          <ScrollMenu
-            data={menu}
-            selected={selected_1}
-            onSelect={this.onSelect}
-          />
+            <div className="scrolling-wrapper">
+              {
+                list.map(el => {
+                  const { name, imgUrl } = el;
+                  return  <div className="card" key={name}><MenuItem text={name} key={name} imgUrl={imgUrl} /></div>;
+                })
+              }
+            </div>
           <div>
             <p>{'New designated chemistry topic every month supplemented by mobile app and exclusive access to VR chemistry lessons. Each set contains the necessary chemicals, components, and instructions to conduct 2-3 unique experiments.'}</p>
             <p>{'You will receive 1 experiment set each month. Each MEL Chemistry set includes 2-3 experiemtns and contains the equipment you will need to conduct the experiments; enough chemical reagents for at least 2 attepts, additional componies, and visual step-by-step instructions.'}</p>
           </div>
-          <ScrollMenu
-            data={menu1}
-            selected={selected_2}
-            onSelect={this.onSelect}
-          />
-          <div style={{ margin: '2rem 0', marginBottom: '5rem' }}>
+           <div className="scrolling-wrapper">
+            {
+               list1.map(el => {
+                const { name, imgUrl } = el;
+                return  <div className="card" key={name}><MenuItem1 text={name} imgUrl={imgUrl} /></div>;
+              })
+            }
+          </div>
+          <div style={{ margin: '2rem 0' }}>
             <h4>{'You will receive'}</h4>
             <ul className="list_menu">
               <li style={{ margin: '1rem 0' }}>
@@ -179,7 +169,7 @@ class App extends React.Component {
           </div>
         </div>
         <div className="footer">
-          <button>Scribe</button>
+          <button>Subscribe</button>
         </div>
       </div>
     );
