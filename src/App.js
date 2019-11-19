@@ -13,7 +13,7 @@ import contents_image_bto_3_lj from './asset/Set/contents_image_bto_3_lj.png';
 import contents_image_neqlof from './asset/Set/contents_image_neqlof.png';
 import contents_image_xuhh_1_l from './asset/Set/contents_image_xuhh_1_l.png';
 
-import ACS from './asset/Logo/ACS.png';
+import ACS from './asset/Logo/ACS.png'; 
 import forbes from './asset/Logo/forbes.png';
 import garther from './asset/Logo/garther.png';
 import live_science from './asset/Logo/live_science.png';
