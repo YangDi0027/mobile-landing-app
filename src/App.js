@@ -49,7 +49,7 @@ const MenuItem = ({ text, imgUrl, selected }) => {
 };
 
 const MenuItem1 = ({ text, imgUrl, selected }) => {
-  return <div className={`menu-item ${selected ? 'active' : ''}`} style={{ whiteSpace: 'pre-wrap', width: '20rem' }}>
+  return <div className={`menu-item ${selected ? 'active list' : ''}`} style={{ whiteSpace: 'pre-wrap', width: '20rem' }}>
     <div className="item-image">
       <img className="img-fluid" src={imgUrl} alt={'logo'} width={'100px'} />
     </div>
